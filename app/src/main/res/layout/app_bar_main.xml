@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.xilaida.mvvmlibrary.widgets.HeaderBar
+        android:id="@+id/mHomeHeaderBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headBackground="@color/common_white"
+        app:backIcon="@mipmap/icon_mean"
+        app:isShowBack="true"
+        app:rightIcon="@mipmap/icon_search"
+        app:titleText="首页"
+        app:titleTextColor="@color/text_light_dark"/>
+    <com.xilaida.mvvmlibrary.widgets.tablayout.TabLayout
+        android:id="@+id/mHomeTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:layout_gravity="center_horizontal"
+        app:tabMode="scrollable"
+        app:tabIndicatorHeight="3dp"
+        app:indicatorStartColor="@color/common_blue"
+        app:indicatorEndColor="@color/common_blue"
+        app:indicatorMarginStart="20dp"
+        app:indicatorMarginEnd="20dp"
+        app:indicatorMarginBottom="3dp"
+        app:tabSelectedTextColor="@color/common_blue"
+        app:tabTextColor="@color/text_light_dark"
+        app:tabBackground="@color/common_white"/>
+    
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mMainVp2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_white"/>
+</LinearLayout>
